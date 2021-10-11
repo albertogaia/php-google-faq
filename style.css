@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 990px;
     margin: 0 auto;
     padding: 20px 0px;
 }
@@ -26,6 +26,53 @@ h2 {
 
 h3 {
     margin-top: 50px;
+}
+
+header {
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    border-bottom: 1px solid #888;
+    padding: 0;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 23px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #888;
+    font-weight: 400;
+}
+
+header ul li a.active {
+    color: rgb(30, 104, 215);
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgb(30, 104, 215);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-text {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #888;
+    margin-left: 5px;
+}
+
+.logo img {
+    width: 100px;
 }
 
 .my-30 {
