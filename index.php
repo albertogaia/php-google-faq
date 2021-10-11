@@ -21,7 +21,7 @@
             Puoi leggere ulteriori informazioni sulla sicurezza online, incluso come proteggere te e la tua famiglia online, nel Centro Google per la sicurezza online.
             
             Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.",
-        ]
+        ],
     ];
 
 ?>
@@ -33,11 +33,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <title>Domande Frequenti</title>
 </head>
 <body>
     <div class="container">
-
+            <?php
+                foreach($faqs as $faq){
+                    echo "<h2>{$faq['domanda']}</h2>";
+                    $p = explode(PHP_EOL,$faq['risposta'] );
+                    foreach($p as $singleP){
+                        echo "<p class='my-30 paragraph'>{$singleP}</p>";
+                    }
+                }
+            ?>
     </div>
 </body>
 </html>

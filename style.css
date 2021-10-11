@@ -4,4 +4,20 @@
     box-sizing: border-box;
 }
 
-.container {}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.my-30 {
+    margin: 30px auto;
+}
+
+.paragraph {
+    line-height: 1.7em;
+}
